@@ -7,10 +7,25 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="floating-emojis" id="emojiContainer"></div>
-
   <div class="container">
     <button id="iniciarBtn">Iniciar</button>
+
+    <div id="cards" class="hidden fade-in">
+      <div class="card" onclick="mostrarInfo('camelia')">
+        <img src="Imagens/images.jpeg" alt="Camélia" />
+        <p>Camélia</p>
+      </div>
+      <div class="card" onclick="mostrarInfo('orquidea')">
+        <img src="Imagens/images (1).jpeg" alt="Orquídea Azul" />
+        <p>Orquídea Azul</p>
+      </div>
+      <div class="card" onclick="mostrarInfo('margarida')">
+        <img src="Imagens/images (2).jpeg" alt="Margaridas" />
+        <p>Margaridas</p>
+      </div>
+    </div>
+
+    <div id="flowerInfo" class="hidden"></div>
 
     <div id="parabens" class="hidden fade-in">
       <h2>Parabéns 🎂</h2>
@@ -18,32 +33,6 @@
         Que o seu dia seja tão especial quanto você! Que as flores que você ama
         tragam beleza, paz e alegria ao seu coração. Que Deus continue iluminando sua vida e enchendo seus dias de amor e vitórias.
       </p>
-    </div>
-
-    <div id="dicaClique" class="hidden">Toque nas flores para descobrir algo especial 🌼✨</div>
-
-    <div id="cards" class="hidden fade-in">
-      <div class="card" onclick="mostrarInfo('camelia')">
-        <img src="Imagens/images.jpeg" alt="Camélia" />
-        <p>Camélia</p>
-        <div class="info hidden" id="info-camelia">
-          A camélia simboliza amor e admiração. É uma flor delicada e cheia de significado!
-        </div>
-      </div>
-      <div class="card" onclick="mostrarInfo('orquidea')">
-        <img src="Imagens/images (1).jpeg" alt="Orquídea Azul" />
-        <p>Orquídea Azul</p>
-        <div class="info hidden" id="info-orquidea">
-          A orquídea azul representa paz, harmonia e raridade. Assim como você! 💙
-        </div>
-      </div>
-      <div class="card" onclick="mostrarInfo('margarida')">
-        <img src="Imagens/images (2).jpeg" alt="Margaridas" />
-        <p>Margaridas</p>
-        <div class="info hidden" id="info-margarida">
-          As margaridas pequenas significam pureza, inocência e alegria. 🌼
-        </div>
-      </div>
     </div>
   </div>
 
