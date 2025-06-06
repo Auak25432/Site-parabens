@@ -2,51 +2,46 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Parabéns 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parabéns pra Você 🎉</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a2d9d5b3d0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <audio id="music" loop>
-    <source src="https://cdn.pixabay.com/audio/2022/03/10/audio_9eae98338d.mp3" type="audio/mpeg">
-  </audio>
-
-  <div class="floating-hearts"></div>
+  <div class="floating-emojis" id="emojiContainer"></div>
 
   <div class="container">
-    <button id="startButton" class="fade-in">Iniciar 💐</button>
+    <button onclick="iniciar()">Iniciar</button>
 
-    <div id="flowerCards" class="hidden">
-      <div class="card" data-flower="camelia">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Camellia_japonica1.jpg/320px-Camellia_japonica1.jpg" alt="Camélia">
+    <div id="cards" class="hidden fade-in">
+      <div class="card" onclick="mostrarInfo('camelia')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Camellia_japonica1.jpg" alt="Camélia" />
         <p>Camélia</p>
       </div>
-      <div class="card" data-flower="orquidea">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Blue_Vanda_orchid.jpg/320px-Blue_Vanda_orchid.jpg" alt="Orquídea Azul">
+      <div class="card" onclick="mostrarInfo('orquidea')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Blue_Vanda_Orchid.jpg" alt="Orquídea Azul" />
         <p>Orquídea Azul</p>
       </div>
-      <div class="card" data-flower="margarida">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Bellis_perennis_white.jpg/320px-Bellis_perennis_white.jpg" alt="Margarida Pequena">
-        <p>Margarida Pequena</p>
+      <div class="card" onclick="mostrarInfo('margarida')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Bellis_perennis_white.jpg" alt="Margaridas" />
+        <p>Margaridas</p>
       </div>
     </div>
 
-    <div id="flowerInfo" class="hidden fade-in">
-      <p id="infoText"></p>
-    </div>
+    <div id="flowerInfo" class="hidden"></div>
 
     <div id="parabens" class="hidden fade-in">
-      <h2>Parabéns 🎉</h2>
-      <p id="mensagem">
-        Que neste dia tão especial, você sinta todo o carinho do mundo! Que essas flores representem o quanto você é admirada, querida e amada. Feliz aniversário, que Deus continue te abençoando grandemente! 💖
+      <h2>Parabéns 🎂</h2>
+      <p>
+        Que o seu dia seja tão especial quanto você! Que as flores que você ama
+        tragam beleza, paz e alegria ao seu coração. Que Deus continue iluminando sua vida e enchendo seus dias de amor e vitórias.
       </p>
     </div>
-
-    <button id="musicButton" class="music-btn">
-      <i class="fas fa-music"></i>
-    </button>
   </div>
+
+  <button class="music-btn" onclick="toggleMusic()">🎵</button>
+  <audio id="bgMusic" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3" />
+  </audio>
 
   <script src="script.js"></script>
 </body>
