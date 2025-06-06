@@ -6,14 +6,17 @@
 
 html, body {
   height: 100%;
-  background-color: #fff0f5; /* Cor de fundo sólida suave */
+  min-height: 100%;
+  margin: 0;
   font-family: 'Arial', sans-serif;
   overflow-x: hidden;
-  position: relative;
 }
 
 body {
   background: linear-gradient(to bottom, #ffe6f0, #ffffff);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* Container principal */
@@ -112,6 +115,7 @@ button#iniciarBtn:hover {
   100% { transform: translateY(100vh); opacity: 0; }
 }
 
+/* Classes utilitárias */
 .hidden {
   display: none !important;
 }
@@ -119,6 +123,7 @@ button#iniciarBtn:hover {
 .fade-in {
   animation: fadeIn 1s ease-in-out forwards;
 }
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
