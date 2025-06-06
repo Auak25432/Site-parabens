@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="floating-emojis" id="emojiContainer"></div>
+
   <div class="container">
     <button id="iniciarBtn">Iniciar</button>
 
@@ -14,18 +16,19 @@
       <div class="card" onclick="mostrarInfo('camelia')">
         <img src="Imagens/images.jpeg" alt="Camélia" />
         <p>Camélia</p>
+        <div class="info" id="info-camelia"></div>
       </div>
       <div class="card" onclick="mostrarInfo('orquidea')">
         <img src="Imagens/images (1).jpeg" alt="Orquídea Azul" />
         <p>Orquídea Azul</p>
+        <div class="info" id="info-orquidea"></div>
       </div>
       <div class="card" onclick="mostrarInfo('margarida')">
         <img src="Imagens/images (2).jpeg" alt="Margaridas" />
         <p>Margaridas</p>
+        <div class="info" id="info-margarida"></div>
       </div>
     </div>
-
-    <div id="flowerInfo" class="hidden"></div>
 
     <div id="parabens" class="hidden fade-in">
       <h2>Parabéns 🎂</h2>
