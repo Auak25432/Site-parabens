@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Botão iniciar revela os cards e a mensagem de parabéns
   document.getElementById("iniciarBtn").addEventListener("click", function () {
-    // Mostra os elementos escondidos
-    document.getElementById("tituloFlores").classList.remove("hidden");
     document.getElementById("cards").classList.remove("hidden");
     document.getElementById("parabens").classList.remove("hidden");
+    document.getElementById("titulo-flores").classList.remove("hidden");
   });
 
-  // Mostrar informações das flores
+  // Mostrar informações específicas da flor clicada
   window.mostrarInfo = function (flor) {
     const info = {
       camelia: "🌸 A camélia simboliza amor e admiração. É uma flor delicada que representa a beleza serena.",
@@ -14,11 +14,17 @@ document.addEventListener("DOMContentLoaded", function () {
       margarida: "🌼 Margaridas pequenas são símbolo de pureza, juventude e ternura. Transmitem doçura e alegria."
     };
 
+    // Limpa os textos anteriores
     document.querySelectorAll(".info").forEach(div => div.innerHTML = "");
+
+    // Mostra o texto apenas no card clicado
     const infoDiv = document.getElementById(`info-${flor}`);
-    infoDiv.textContent = info[flor];
+    if (infoDiv) {
+      infoDiv.textContent = info[flor];
+    }
   };
 
+  // Emojis flutuantes
   const emojiContainer = document.getElementById("emojiContainer");
   const emojis = ['🎉', '🎊', '🎂', '🎈', '💖'];
 
