@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Botão iniciar revela os cards e a mensagem de parabéns
+  // Quando clicar no botão Iniciar
   document.getElementById("iniciarBtn").addEventListener("click", function () {
     document.getElementById("cards").classList.remove("hidden");
     document.getElementById("parabens").classList.remove("hidden");
     document.getElementById("titulo-flores").classList.remove("hidden");
   });
 
-  // Mostrar informações específicas da flor clicada
+  // Mostrar informações das flores
   window.mostrarInfo = function (flor) {
     const info = {
       camelia: "🌸 A camélia simboliza amor e admiração. É uma flor delicada que representa a beleza serena.",
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Limpa os textos anteriores
     document.querySelectorAll(".info").forEach(div => div.innerHTML = "");
 
-    // Mostra o texto apenas no card clicado
+    // Insere o texto no card clicado
     const infoDiv = document.getElementById(`info-${flor}`);
     if (infoDiv) {
       infoDiv.textContent = info[flor];
