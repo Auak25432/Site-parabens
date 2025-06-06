@@ -10,7 +10,7 @@
   <div class="floating-emojis" id="emojiContainer"></div>
 
   <div class="container">
-    <button onclick="iniciar()">Iniciar</button>
+    <button id="iniciarBtn">Iniciar</button>
 
     <div id="cards" class="hidden fade-in">
       <div class="card" onclick="mostrarInfo('camelia')">
@@ -37,11 +37,6 @@
       </p>
     </div>
   </div>
-
-  <button class="music-btn" onclick="toggleMusic()">🎵</button>
-  <audio id="bgMusic" loop>
-    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mp3" />
-  </audio>
 
   <script src="script.js"></script>
 </body>
