@@ -13,10 +13,11 @@ html, body {
 }
 
 body {
-  background: linear-gradient(to bottom, #ffe6f0 0%, #fff0f5 50%, #ffffff 100%);
-  background-attachment: fixed;
+  background: linear-gradient(to bottom, #ffe6f0, #fff0f5, #ffffff);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-size: 100% 100vh;
+  background-position: top;
 }
 
 /* Container principal */
@@ -124,9 +125,17 @@ button#iniciarBtn:hover {
   animation: fadeIn 1s ease-in-out forwards;
 }
 
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+html {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
 }
 
 /* Responsividade */
