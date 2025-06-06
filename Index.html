@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parabéns 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2d9d5b3d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <audio id="music" loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/10/audio_9eae98338d.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="floating-hearts"></div>
+
+  <div class="container">
+    <button id="startButton" class="fade-in">Iniciar 💐</button>
+
+    <div id="flowerCards" class="hidden">
+      <div class="card" data-flower="camelia">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Camellia_japonica1.jpg/320px-Camellia_japonica1.jpg" alt="Camélia">
+        <p>Camélia</p>
+      </div>
+      <div class="card" data-flower="orquidea">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Blue_Vanda_orchid.jpg/320px-Blue_Vanda_orchid.jpg" alt="Orquídea Azul">
+        <p>Orquídea Azul</p>
+      </div>
+      <div class="card" data-flower="margarida">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Bellis_perennis_white.jpg/320px-Bellis_perennis_white.jpg" alt="Margarida Pequena">
+        <p>Margarida Pequena</p>
+      </div>
+    </div>
+
+    <div id="flowerInfo" class="hidden fade-in">
+      <p id="infoText"></p>
+    </div>
+
+    <div id="parabens" class="hidden fade-in">
+      <h2>Parabéns 🎉</h2>
+      <p id="mensagem">
+        Que neste dia tão especial, você sinta todo o carinho do mundo! Que essas flores representem o quanto você é admirada, querida e amada. Feliz aniversário, que Deus continue te abençoando grandemente! 💖
+      </p>
+    </div>
+
+    <button id="musicButton" class="music-btn">
+      <i class="fas fa-music"></i>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
