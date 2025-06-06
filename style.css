@@ -20,13 +20,6 @@ body {
   background-position: top;
 }
 
-html {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-}
-
 .container {
   text-align: center;
   padding: 20px;
@@ -34,7 +27,6 @@ html {
   z-index: 2;
 }
 
-/* Botão */
 button#iniciarBtn {
   padding: 12px 24px;
   font-size: 1.1rem;
@@ -50,15 +42,6 @@ button#iniciarBtn:hover {
   background-color: #ff1493;
 }
 
-/* Título das flores */
-#tituloFlores {
-  color: #d63384;
-  font-size: 1.6rem;
-  margin-bottom: 16px;
-  text-align: center;
-}
-
-/* Cards */
 #cards {
   display: flex;
   flex-direction: column;
@@ -91,7 +74,6 @@ button#iniciarBtn:hover {
   margin-top: 6px;
 }
 
-/* Mensagem de parabéns */
 #parabens {
   margin-top: 30px;
   padding: 20px;
@@ -108,7 +90,6 @@ button#iniciarBtn:hover {
   font-size: 1.1rem;
 }
 
-/* Emojis flutuando */
 .floating-emojis {
   position: fixed;
   width: 100%;
@@ -130,21 +111,17 @@ button#iniciarBtn:hover {
   100% { transform: translateY(100vh); opacity: 0; }
 }
 
-/* Utilitárias */
 .hidden {
   display: none !important;
 }
-
 .fade-in {
   animation: fadeIn 1s ease-in-out forwards;
 }
-
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* Responsividade */
 @media (min-width: 600px) {
   #cards {
     flex-direction: row;
