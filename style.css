@@ -6,8 +6,10 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #fffafc, #ffe0f0);
+  background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+  min-height: 100vh;
   overflow-x: hidden;
+  position: relative;
 }
 
 .container {
@@ -96,21 +98,37 @@ button:hover {
   to { opacity: 1; transform: translateY(0); }
 }
 
-.floating-hearts::before {
-  content: "💖 💕 💘 💝 💗";
+/* Emojis flutuantes */
+.floating-emojis {
   position: fixed;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 32px;
-  animation: floatHearts 10s linear infinite;
-  opacity: 0.5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
   z-index: 1;
+  overflow: hidden;
 }
 
-@keyframes floatHearts {
-  0% { top: 100%; transform: translateX(-50%) rotate(0deg); }
-  100% { top: -100px; transform: translateX(-50%) rotate(360deg); }
+.floating-emojis span {
+  position: absolute;
+  font-size: 24px;
+  animation: float 10s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(360deg);
+    opacity: 0;
+  }
 }
 
 .music-btn {
