@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Quando clicar no botão Iniciar
   document.getElementById("iniciarBtn").addEventListener("click", function () {
+    // Mostra os elementos escondidos
     document.getElementById("tituloFlores").classList.remove("hidden");
     document.getElementById("cards").classList.remove("hidden");
     document.getElementById("parabens").classList.remove("hidden");
@@ -14,15 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
       margarida: "🌼 Margaridas pequenas são símbolo de pureza, juventude e ternura. Transmitem doçura e alegria."
     };
 
-    // Limpa os textos anteriores
     document.querySelectorAll(".info").forEach(div => div.innerHTML = "");
-
-    // Insere o texto no card clicado
     const infoDiv = document.getElementById(`info-${flor}`);
     infoDiv.textContent = info[flor];
   };
 
-  // Emojis flutuantes
   const emojiContainer = document.getElementById("emojiContainer");
   const emojis = ['🎉', '🎊', '🎂', '🎈', '💖'];
 
