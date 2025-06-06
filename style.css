@@ -96,7 +96,7 @@ button#iniciarBtn:hover {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .fade-in {
