@@ -1,15 +1,14 @@
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background: linear-gradient(to bottom, #ffe6f0, #ffffff);
   overflow-x: hidden;
 }
-
 .container {
   text-align: center;
   padding: 20px;
 }
-
 button#iniciarBtn {
   padding: 12px 24px;
   font-size: 1.1rem;
@@ -21,18 +20,15 @@ button#iniciarBtn {
   margin-bottom: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-
 button#iniciarBtn:hover {
   background-color: #ff1493;
 }
-
 #cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
 }
-
 .card {
   width: 90%;
   max-width: 320px;
@@ -42,27 +38,22 @@ button#iniciarBtn:hover {
   padding: 10px;
   transition: transform 0.3s;
 }
-
 .card:hover {
   transform: scale(1.02);
 }
-
 .card img {
   width: 100%;
   border-radius: 12px;
 }
-
 .card p {
   font-weight: bold;
   margin: 8px 0 4px;
 }
-
 .info {
   font-size: 0.95rem;
   color: #444;
   margin-top: 6px;
 }
-
 #parabens {
   margin-top: 30px;
   padding: 20px;
@@ -70,18 +61,14 @@ button#iniciarBtn:hover {
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
-
 #parabens h2 {
   color: #ff69b4;
   font-size: 1.8rem;
 }
-
 #parabens p {
   color: #333;
   font-size: 1.1rem;
 }
-
-/* Emojis flutuantes */
 .floating-emojis span {
   position: absolute;
   top: -40px;
@@ -89,26 +76,20 @@ button#iniciarBtn:hover {
   animation: float 8s linear infinite;
   z-index: 0;
 }
-
 @keyframes float {
   0% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(100vh); opacity: 0; }
 }
-
 .hidden {
   display: none !important;
 }
-
 .fade-in {
   animation: fadeIn 1s ease-in-out forwards;
 }
-
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-
-/* Responsivo */
 @media (min-width: 600px) {
   #cards {
     flex-direction: row;
