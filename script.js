@@ -1,7 +1,9 @@
-function iniciar() {
+// Botão de iniciar
+document.getElementById("iniciarBtn").addEventListener("click", function () {
   document.getElementById("cards").classList.remove("hidden");
-}
+});
 
+// Mostrar informações das flores
 function mostrarInfo(flor) {
   const info = {
     camelia: "🌸 A camélia simboliza amor e admiração. É uma flor delicada que representa a beleza serena.",
@@ -17,7 +19,7 @@ function mostrarInfo(flor) {
   parabens.classList.remove("hidden");
 }
 
-// Emojis de festa 🎉
+// Emojis flutuantes
 const emojiContainer = document.getElementById("emojiContainer");
 const emojis = ['🎉', '🎊', '🎂', '🎈', '💖'];
 
@@ -34,16 +36,3 @@ function createFloatingEmoji() {
 }
 
 setInterval(createFloatingEmoji, 600);
-
-// Música
-const audio = document.getElementById("bgMusic");
-let playing = false;
-
-function toggleMusic() {
-  if (playing) {
-    audio.pause();
-  } else {
-    audio.play();
-  }
-  playing = !playing;
-}
