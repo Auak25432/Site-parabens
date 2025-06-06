@@ -12,18 +12,20 @@
   <div class="container">
     <button id="iniciarBtn">Iniciar</button>
 
+    <h2 id="tituloFlores" class="hidden fade-in">🌺 Flores Preferidas 🌺</h2>
+
     <div id="cards" class="hidden fade-in">
-      <div class="card" data-flor="camelia">
+      <div class="card" onclick="mostrarInfo('camelia')">
         <img src="Imagens/images.jpeg" alt="Camélia" />
         <p>Camélia</p>
         <div class="info" id="info-camelia"></div>
       </div>
-      <div class="card" data-flor="orquidea">
+      <div class="card" onclick="mostrarInfo('orquidea')">
         <img src="Imagens/images (1).jpeg" alt="Orquídea Azul" />
         <p>Orquídea Azul</p>
         <div class="info" id="info-orquidea"></div>
       </div>
-      <div class="card" data-flor="margarida">
+      <div class="card" onclick="mostrarInfo('margarida')">
         <img src="Imagens/images (2).jpeg" alt="Margaridas" />
         <p>Margaridas</p>
         <div class="info" id="info-margarida"></div>
