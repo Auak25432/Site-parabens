@@ -1,25 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Quando clicar no botão Iniciar
-  document.getElementById("iniciarBtn").addEventListener("click", function () {
-    document.getElementById("cards").classList.remove("hidden");
-    document.getElementById("parabens").classList.remove("hidden");
+  const iniciarBtn = document.getElementById("iniciarBtn");
+  const cardsContainer = document.getElementById("cards");
+  const parabens = document.getElementById("parabens");
+
+  iniciarBtn.addEventListener("click", function () {
+    cardsContainer.classList.remove("hidden");
+    parabens.classList.remove("hidden");
+    iniciarBtn.style.display = "none";
   });
 
-  // Mostrar informações das flores
-  window.mostrarInfo = function (flor) {
-    const info = {
-      camelia: "🌸 A camélia simboliza amor e admiração. É uma flor delicada que representa a beleza serena.",
-      orquidea: "💙 A orquídea azul representa raridade, harmonia e paz. Uma flor elegante e misteriosa.",
-      margarida: "🌼 Margaridas pequenas são símbolo de pureza, juventude e ternura. Transmitem doçura e alegria."
-    };
-
-    // Limpa os textos anteriores
-    document.querySelectorAll(".info").forEach(div => div.innerHTML = "");
-
-    // Insere o texto no card clicado
-    const infoDiv = document.getElementById(`info-${flor}`);
-    infoDiv.textContent = info[flor];
+  const infoText = {
+    camelia: "🌸 A camélia simboliza amor e admiração. É uma flor delicada que representa a beleza serena.",
+    orquidea: "💙 A orquídea azul representa raridade, harmonia e paz. Uma flor elegante e misteriosa.",
+    margarida: "🌼 Margaridas pequenas são símbolo de pureza, juventude e ternura. Transmitem doçura e alegria."
   };
+
+  document.querySelectorAll(".card").forEach(card => {
+    card.addEventListener("click", function () {
+      const flor = card.getAttribute("data-flor");
+
+      // Limpa todas as descrições antes de mostrar a nova
+      document.querySelectorAll(".info").forEach(info => info.textContent = "");
+
+      const infoDiv = document.getElementById(`info-${flor}`);
+      infoDiv.textContent = infoText[flor];
+    });
+  });
 
   // Emojis flutuantes
   const emojiContainer = document.getElementById("emojiContainer");
