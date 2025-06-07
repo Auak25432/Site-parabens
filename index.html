@@ -12,23 +12,45 @@
   <div class="container">
     <button id="iniciarBtn">Iniciar</button>
 
-    <h2 id="titulo-flores" class="hidden fade-in">🌷 Flores Preferidas</h2>
+    <div id="floresSection" class="hidden fade-in">
+      <h2 id="titulo-flores">🌸 Flores preferidas</h2>
+      <div id="cards" class="cards-container">
+        <div class="card" onclick="mostrarInfo('camelia')">
+          <img src="Imagens/images.jpeg" alt="Camélia" />
+          <p>Camélia</p>
+          <div class="info" id="info-camelia"></div>
+        </div>
+        <div class="card" onclick="mostrarInfo('orquidea')">
+          <img src="Imagens/images (1).jpeg" alt="Orquídea Azul" />
+          <p>Orquídea Azul</p>
+          <div class="info" id="info-orquidea"></div>
+        </div>
+        <div class="card" onclick="mostrarInfo('margarida')">
+          <img src="Imagens/images (2).jpeg" alt="Margaridas" />
+          <p>Margaridas</p>
+          <div class="info" id="info-margarida"></div>
+        </div>
+      </div>
+    </div>
 
-    <div id="cards" class="hidden fade-in">
-      <div class="card" onclick="mostrarInfo('camelia')">
-        <img src="Imagens/images.jpeg" alt="Camélia" />
-        <p>Camélia</p>
-        <div class="info" id="info-camelia"></div>
-      </div>
-      <div class="card" onclick="mostrarInfo('orquidea')">
-        <img src="Imagens/images (1).jpeg" alt="Orquídea Azul" />
-        <p>Orquídea Azul</p>
-        <div class="info" id="info-orquidea"></div>
-      </div>
-      <div class="card" onclick="mostrarInfo('margarida')">
-        <img src="Imagens/images (2).jpeg" alt="Margaridas" />
-        <p>Margaridas</p>
-        <div class="info" id="info-margarida"></div>
+    <div id="hobbiesSection" class="hidden fade-in">
+      <h2 id="titulo-hobbies">🎯 Hobbies preferidos</h2>
+      <div id="cards-hobbies" class="cards-container">
+        <div class="card" onclick="mostrarInfo('livros')">
+          <img src="Imagens/livros.jpeg" alt="Ler livros" />
+          <p>Ler livros</p>
+          <div class="info" id="info-livros"></div>
+        </div>
+        <div class="card" onclick="mostrarInfo('trico')">
+          <img src="Imagens/trico.jpeg" alt="Tricô" />
+          <p>Tricô</p>
+          <div class="info" id="info-trico"></div>
+        </div>
+        <div class="card" onclick="mostrarInfo('jiujitsu')">
+          <img src="Imagens/jiujitsu.jpeg" alt="Jiu-jitsu" />
+          <p>Jiu-jitsu</p>
+          <div class="info" id="info-jiujitsu"></div>
+        </div>
       </div>
     </div>
 
