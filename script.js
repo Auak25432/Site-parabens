@@ -9,28 +9,36 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("parabens").classList.remove("hidden");
   });
 
-  window.mostrarInfo = function (flor) {
+  window.mostrarInfo = function (item) {
     const info = {
-  camelia: "🌸 A camélia simboliza amor e admiração. É uma flor delicada que representa a beleza serena.",
-  orquidea: "💙 A orquídea azul representa raridade, harmonia e paz. Uma flor elegante e misteriosa.",
-  margarida: "🌼 Margaridas pequenas são símbolo de pureza, juventude e ternura. Transmitem doçura e alegria.",
-  
-  // Hobbies
-  cafe: "☕ Nada como um café para aquecer o coração e despertar a mente. Um hobby saboroso e reconfortante.",
-  trico: "🧶 Tricotar é uma forma de relaxar, criar e expressar carinho em cada ponto.",
-  jiujitsu: "🥋 O Jiu-jitsu desenvolve disciplina, foco e autoconfiança. Um esporte que fortalece corpo e mente.",
-  
-  // Gêneros
-  romance: "❤️ Histórias românticas tocam o coração e falam sobre amor em suas várias formas.",
-  dorama: "🎎 Doramas encantam com suas narrativas emocionantes e cultura envolvente.",
-  fantasia: "🧙‍♂️ Fantasia transporta para mundos mágicos e aventuras épicas além da imaginação.",
-  acao: "💥 Ação traz adrenalina, ritmo acelerado e emoções fortes em cada cena."
-};
+      // Flores
+      camelia: "🌸 A camélia simboliza amor e admiração. É uma flor delicada que representa a beleza serena.",
+      orquidea: "💙 A orquídea azul representa raridade, harmonia e paz. Uma flor elegante e misteriosa.",
+      margarida: "🌼 Margaridas pequenas são símbolo de pureza, juventude e ternura. Transmitem doçura e alegria.",
+      
+      // Hobbies
+      cafe: "☕ Nada como um café para aquecer o coração e despertar a mente. Um hobby saboroso e reconfortante.",
+      trico: "🧶 Tricotar é uma forma de relaxar, criar e expressar carinho em cada ponto.",
+      jiujitsu: "🥋 O Jiu-jitsu desenvolve disciplina, foco e autoconfiança. Um esporte que fortalece corpo e mente.",
+      
+      // Gêneros
+      romance: "❤️ Histórias românticas tocam o coração e falam sobre amor em suas várias formas.",
+      dorama: "🎎 Doramas encantam com suas narrativas emocionantes e cultura envolvente.",
+      fantasia: "🧙‍♂️ Fantasia transporta para mundos mágicos e aventuras épicas além da imaginação.",
+      acao: "💥 Ação traz adrenalina, ritmo acelerado e emoções fortes em cada cena."
+    };
+
+    // Limpar textos anteriores
     document.querySelectorAll(".info").forEach(div => div.innerHTML = "");
-    const infoDiv = document.getElementById(`info-${flor}`);
-    infoDiv.textContent = info[flor];
+    
+    // Mostrar novo texto
+    const infoDiv = document.getElementById(`info-${item}`);
+    if (infoDiv && info[item]) {
+      infoDiv.textContent = info[item];
+    }
   };
 
+  // Emojis flutuantes
   const emojiContainer = document.getElementById("emojiContainer");
   const emojis = ['🎉', '🎊', '🎂', '🎈', '💖'];
 
