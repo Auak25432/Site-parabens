@@ -26,18 +26,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.mostrarInfo = function (item) {
     const info = {
-      camelia: "🌸 A camélia simboliza amor e admiração. É uma flor delicada que representa a beleza serena.",
-      orquidea: "💙 A orquídea azul representa raridade, harmonia e paz. Uma flor elegante e misteriosa.",
-      margarida: "🌼 Margaridas pequenas são símbolo de pureza, juventude e ternura. Transmitem doçura e alegria.",
-      cafe: "☕ Nada como um bom café para inspirar bons momentos!",
-      trico: "🧶 Tricotar é uma forma calma e criativa de passar o tempo.",
-      jiujitsu: "🥋 O Jiu-jitsu desenvolve disciplina, foco e resistência.",
-      romance: "❤️ Histórias de amor que aquecem o coração.",
-      dorama: "🎎 Enredos intensos, emoções fortes e personagens cativantes.",
-      fantasia: "🦄 Mundos mágicos e aventuras incríveis.",
-      acao: "🔥 Adrenalina, luta e superação!"
-    };
-
+  camelia: "🌸 A camélia simboliza amor e admiração. É uma flor delicada que representa a beleza serena.",
+  orquidea: "💙 A orquídea azul representa raridade, harmonia e paz. Uma flor elegante e misteriosa.",
+  margarida: "🌼 Margaridas pequenas são símbolo de pureza, juventude e ternura. Transmitem doçura e alegria.",
+  cafe: "☕ Nada como um café quentinho para aquecer o coração e começar bem o dia.",
+  trico: "🧶 Tricotar é mais do que um passatempo, é criar com carinho cada ponto cheio de afeto.",
+  jiujitsu: "🥋 Jiu-jitsu é disciplina, força e leveza ao mesmo tempo. Um verdadeiro estilo de vida.",
+  ler: "📚 Ler livros é uma viagem para dentro de si e para fora do mundo real.",
+  series_filmes: "🎥 Nada como maratonar uma boa série ou assistir aquele filme inesquecível no fim do dia.",
+  romance: "❤️ Histórias de amor que aquecem o coração.",
+  dorama: "🎎 Enredos intensos, emoções fortes e personagens cativantes.",
+  fantasia: "🦄 Mundos mágicos e aventuras incríveis.",
+  acao: "🔥 Adrenalina, luta e superação!",
+  
+  // Características
+  menina_de_deus: "🙏 Uma jovem guiada pela fé, com um coração voltado a Deus e aos bons valores.",
+  gentil: "💖 Uma pessoa que trata os outros com carinho, atenção e respeito.",
+  inteligente: "🧠 Raciocínio rápido, sabedoria e uma mente curiosa e brilhante.",
+  linda: "🌟 Beleza por fora e ainda mais por dentro, com um brilho único.",
+  humilde: "🍃 Simples, verdadeira e com o coração aberto para aprender e ajudar.",
+  engraçada: "😂 Capaz de fazer sorrir até nos dias mais difíceis.",
+  sorridente: "😊 Seu sorriso ilumina o ambiente e transmite alegria.",
+  madura: "🧘‍♀️ Alguém que sabe lidar com a vida com equilíbrio e responsabilidade.",
+  corajosa: "🦁 Enfrenta desafios com determinação e não foge dos seus sonhos.",
+  especial: "🌷 Única, incomparável e insubstituível. Uma verdadeira bênção na vida de quem a conhece."
+};
     document.querySelectorAll(".info").forEach(div => div.innerHTML = "");
     const infoDiv = document.getElementById(`info-${item}`);
     if (infoDiv) infoDiv.textContent = info[item];
