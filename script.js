@@ -1,15 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("iniciarBtn").addEventListener("click", function () {
-    document.getElementById("titulo-flores").classList.remove("hidden");
-    document.getElementById("cards").classList.remove("hidden");
-    document.getElementById("titulo-hobbies").classList.remove("hidden");
-    document.getElementById("hobbies").classList.remove("hidden");
-    document.getElementById("titulo-generos").classList.remove("hidden");
-    document.getElementById("generos").classList.remove("hidden");
-    document.getElementById("titulo-caracteristicas").classList.remove("hidden");
-    document.getElementById("caracteristicas").classList.remove("hidden");
-    document.getElementById("parabens").classList.remove("hidden");
-  });
+document.getElementById("iniciarBtn").addEventListener("click", function () {
+  // Mostrar seções
+  document.getElementById("titulo-flores").classList.remove("hidden");
+  document.getElementById("cards").classList.remove("hidden");
+  document.getElementById("titulo-hobbies").classList.remove("hidden");
+  document.getElementById("hobbies").classList.remove("hidden");
+  document.getElementById("titulo-generos").classList.remove("hidden");
+  document.getElementById("generos").classList.remove("hidden");
+  document.getElementById("titulo-caracteristicas").classList.remove("hidden");
+  document.getElementById("caracteristicas").classList.remove("hidden");
+  document.getElementById("parabens").classList.remove("hidden");
+
+  // Desabilitar botão
+  this.disabled = true;
+  this.style.cursor = "default";
+});
 
   window.mostrarInfo = function (item) {
     const info = {
