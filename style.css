@@ -1,113 +1,131 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Parabéns pra Você 🎉</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="floating-emojis" id="emojiContainer"></div>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  <div class="container">
-    <button id="iniciarBtn">Iniciar</button>
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #ffe6f0, #fff0f5, #ffffff);
+  overflow-x: hidden;
+}
 
-    <!-- Flores preferidas -->
-    <h2 id="titulo-flores" class="hidden">🌸 Flores Preferidas</h2>
-    <div id="cards" class="hidden fade-in">
-      <div class="card" onclick="mostrarInfo('camelia')">
-        <img src="Imagens/images.jpeg" alt="Camélia" />
-        <p>Camélia</p>
-        <div class="info" id="info-camelia"></div>
-      </div>
-      <div class="card" onclick="mostrarInfo('orquidea')">
-        <img src="Imagens/images (1).jpeg" alt="Orquídea Azul" />
-        <p>Orquídea Azul</p>
-        <div class="info" id="info-orquidea"></div>
-      </div>
-      <div class="card" onclick="mostrarInfo('margarida')">
-        <img src="Imagens/images (2).jpeg" alt="Margaridas" />
-        <p>Margaridas</p>
-        <div class="info" id="info-margarida"></div>
-      </div>
-    </div>
+.container {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
 
-    <!-- Hobbies preferidos -->
-    <h2 id="titulo-hobbies" class="hidden">🎨 Hobbies Preferidos</h2>
-    <div id="hobbies" class="hidden fade-in">
-      <div class="card" onclick="mostrarInfo('cafe')">
-        <img src="Imagens/Bebendocafe.jpg" alt="Tomar Café" />
-        <p>Tomar Café</p>
-        <div class="info" id="info-cafe"></div>
-      </div>
-      <div class="card" onclick="mostrarInfo('trico')">
-        <img src="Imagens/Tricoemoji.jpg" alt="Tricô" />
-        <p>Tricô</p>
-        <div class="info" id="info-trico"></div>
-      </div>
-      <div class="card" onclick="mostrarInfo('jiujitsu')">
-        <img src="Imagens/Jiuemoji.jpg" alt="Jiu-jitsu" />
-        <p>Jiu-jitsu</p>
-        <div class="info" id="info-jiujitsu"></div>
-      </div>
-    </div>
+button#iniciarBtn {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+button#iniciarBtn:hover {
+  background-color: #ff1493;
+}
 
-    <!-- Gêneros preferidos -->
-    <h2 id="titulo-generos" class="hidden">🎬 Gênero de Filme/Séries/Livros Preferidos</h2>
-    <div id="generos" class="hidden fade-in">
-      <div class="card" onclick="mostrarInfo('romance')">
-        <img src="Imagens/Emojiromance.png" alt="Romance" />
-        <p>Romance</p>
-        <div class="info" id="info-romance"></div>
-      </div>
-      <div class="card" onclick="mostrarInfo('dorama')">
-        <img src="Imagens/Emojidorama.jpeg" alt="Dorama" />
-        <p>Dorama</p>
-        <div class="info" id="info-dorama"></div>
-      </div>
-      <div class="card" onclick="mostrarInfo('fantasia')">
-        <img src="Imagens/Emojifantasia.jpg" alt="Fantasia" />
-        <p>Fantasia</p>
-        <div class="info" id="info-fantasia"></div>
-      </div>
-      <div class="card" onclick="mostrarInfo('acao')">
-        <img src="Imagens/Emojiacao.jpeg" alt="Ação" />
-        <p>Ação</p>
-        <div class="info" id="info-acao"></div>
-      </div>
-    </div>
+h2 {
+  color: #d63384;
+  font-size: 1.5rem;
+  margin: 30px 0 10px;
+}
 
-    <!-- Características -->
-    <h2 id="titulo-caracteristicas" class="hidden">💖 Características</h2>
-    <div id="caracteristicas" class="hidden fade-in">
-      <div class="card">
-        <img src="Imagens/gentil.jpg" alt="Gentil" />
-        <p>Gentil</p>
-      </div>
-      <div class="card">
-        <img src="Imagens/inteligente.jpg" alt="Inteligente" />
-        <p>Inteligente</p>
-      </div>
-      <div class="card">
-        <img src="Imagens/engracada.jpg" alt="Engraçada" />
-        <p>Engraçada</p>
-      </div>
-      <div class="card">
-        <img src="Imagens/sorridente.jpg" alt="Sorridente" />
-        <p>Sorridente</p>
-      </div>
-    </div>
+#cards, #hobbies, #generos, #caracteristicas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-    <!-- Mensagem de parabéns -->
-    <div id="parabens" class="hidden fade-in">
-      <h2>Parabéns 🎂</h2>
-      <p>
-        Que o seu dia seja tão especial quanto você! Que as flores que você ama
-        tragam beleza, paz e alegria ao seu coração. Que Deus continue iluminando sua vida e enchendo seus dias de amor e vitórias.
-      </p>
-    </div>
-  </div>
+.card {
+  width: 90%;
+  max-width: 320px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 10px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+.card p {
+  font-weight: bold;
+  margin: 8px 0 4px;
+}
+.info {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 6px;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+#parabens {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff8e1;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+#parabens h2 {
+  color: #ff69b4;
+  font-size: 1.8rem;
+}
+#parabens p {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.floating-emojis {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+.floating-emojis span {
+  position: absolute;
+  top: -40px;
+  font-size: 24px;
+  animation: float 8s linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (min-width: 600px) {
+  #cards, #hobbies, #generos, #caracteristicas {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
