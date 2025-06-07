@@ -38,12 +38,20 @@ document.getElementById("iniciarBtn").addEventListener("click", function () {
   const emojis = ['🎉', '🎊', '🎂', '🎈', '💖'];
 
   function createFloatingEmoji() {
-    const span = document.createElement("span");
-    span.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-    span.style.left = Math.random() * 100 + "vw";
-    span.style.animationDuration = 5 + Math.random() * 5 + "s";
-    emojiContainer.appendChild(span);
-    setTimeout(() => span.remove(), 10000);
+  const span = document.createElement("span");
+  span.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+  span.style.left = Math.random() * 100 + "vw";
+  span.style.animationDuration = 5 + Math.random() * 5 + "s";
+  emojiContainer.appendChild(span);
+
+  setTimeout(() => {
+    span.remove();
+  }, 10000);
+
+  // Limitar a quantidade máxima de emojis para evitar lentidão
+  if (emojiContainer.children.length > 50) {
+    emojiContainer.removeChild(emojiContainer.firstChild);
+  }
   }
 
   setInterval(createFloatingEmoji, 600);
