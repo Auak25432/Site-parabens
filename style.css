@@ -35,6 +35,16 @@ button#iniciarBtn:hover {
   background-color: #ff1493;
 }
 
+.section-title {
+  margin-top: 40px;   /* espaço acima do título */
+  margin-bottom: 15px; /* espaço entre título e cards */
+  padding-bottom: 8px; /* espaço interno para linha */
+  font-size: 1.8rem;
+  color: #444;
+  border-bottom: 2px solid #f39c12; /* linha colorida abaixo do título */
+  letter-spacing: 1px;
+}
+
 h2 {
   color: #d63384;
   font-size: 1.5rem;
