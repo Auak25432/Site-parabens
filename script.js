@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
       camelia: "🌸 A camélia simboliza amor e admiração. É uma flor delicada que representa a beleza serena.",
       orquidea: "💙 A orquídea azul representa raridade, harmonia e paz. Uma flor elegante e misteriosa.",
       margarida: "🌼 Margaridas pequenas são símbolo de pureza, juventude e ternura. Transmitem doçura e alegria.",
-      cafe: "☕ Um momento de paz e aconchego, perfeito para recarregar as energias.",
-      trico: "🧶 Criatividade e paciência em cada ponto tecido.",
-      jiujitsu: "🥋 Força, foco e disciplina em cada movimento.",
-      romance: "❤️ Histórias apaixonantes que tocam o coração.",
-      dorama: "📺 Emoção, cultura e muita fofura em cada episódio.",
-      fantasia: "🧙‍♀️ Mundos mágicos e aventuras incríveis.",
-      acao: "💥 Adrenalina e emoção do início ao fim."
+      cafe: "☕ Nada como um bom café para inspirar bons momentos!",
+      trico: "🧶 Tricotar é uma forma calma e criativa de passar o tempo.",
+      jiujitsu: "🥋 O Jiu-jitsu desenvolve disciplina, foco e resistência.",
+      romance: "❤️ Histórias de amor que aquecem o coração.",
+      dorama: "🎎 Enredos intensos, emoções fortes e personagens cativantes.",
+      fantasia: "🦄 Mundos mágicos e aventuras incríveis.",
+      acao: "🔥 Adrenalina, luta e superação!"
     };
 
     document.querySelectorAll(".info").forEach(div => div.innerHTML = "");
