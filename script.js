@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("cards").classList.remove("hidden");
     document.getElementById("titulo-hobbies").classList.remove("hidden");
     document.getElementById("hobbies").classList.remove("hidden");
+    document.getElementById("titulo-generos").classList.remove("hidden");
+    document.getElementById("generos").classList.remove("hidden");
     document.getElementById("parabens").classList.remove("hidden");
   });
 
@@ -14,21 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
       margarida: "🌼 Margaridas pequenas são símbolo de pureza, juventude e ternura. Transmitem doçura e alegria."
     };
 
-    document.querySelectorAll("#cards .info").forEach(div => div.innerHTML = "");
+    document.querySelectorAll(".info").forEach(div => div.innerHTML = "");
     const infoDiv = document.getElementById(`info-${flor}`);
     infoDiv.textContent = info[flor];
-  };
-
-  window.mostrarInfoHobby = function (hobby) {
-    const infoHobbies = {
-      cafe: "☕ Tomar café é um momento de aconchego e reflexão, além de ser delicioso!",
-      trico: "🧶 Tricotar é um passatempo relaxante e criativo, que resulta em peças feitas com carinho.",
-      jiujitsu: "🥋 O jiu-jitsu desenvolve disciplina, foco e fortalece corpo e mente."
-    };
-
-    document.querySelectorAll("#hobbies .info").forEach(div => div.innerHTML = "");
-    const infoDiv = document.getElementById(`info-${hobby}`);
-    infoDiv.textContent = infoHobbies[hobby];
   };
 
   const emojiContainer = document.getElementById("emojiContainer");
