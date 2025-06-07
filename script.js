@@ -1,26 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Quando clicar no botão Iniciar
+  // Botão Iniciar
   document.getElementById("iniciarBtn").addEventListener("click", function () {
-    document.getElementById("cards").classList.remove("hidden");
+    document.getElementById("floresSection").classList.remove("hidden");
+    document.getElementById("hobbiesSection").classList.remove("hidden");
     document.getElementById("parabens").classList.remove("hidden");
-    document.getElementById("titulo-flores").classList.remove("hidden");
   });
 
-  // Mostrar informações das flores
-  window.mostrarInfo = function (flor) {
-    const info = {
+  // Mostrar informações
+  window.mostrarInfo = function (id) {
+    const textos = {
       camelia: "🌸 A camélia simboliza amor e admiração. É uma flor delicada que representa a beleza serena.",
       orquidea: "💙 A orquídea azul representa raridade, harmonia e paz. Uma flor elegante e misteriosa.",
-      margarida: "🌼 Margaridas pequenas são símbolo de pureza, juventude e ternura. Transmitem doçura e alegria."
+      margarida: "🌼 Margaridas pequenas são símbolo de pureza, juventude e ternura. Transmitem doçura e alegria.",
+      livros: "📚 Ler livros é uma forma incrível de viajar sem sair do lugar, mergulhar em histórias e aprender coisas novas.",
+      trico: "🧶 Tricotar é relaxante e criativo, ideal para expressar carinho através de peças feitas à mão.",
+      jiujitsu: "🥋 O jiu-jitsu desenvolve disciplina, força e autoconfiança. Um hobby poderoso!"
     };
 
-    // Limpa os textos anteriores
+    // Limpar todos
     document.querySelectorAll(".info").forEach(div => div.innerHTML = "");
 
-    // Insere o texto no card clicado
-    const infoDiv = document.getElementById(`info-${flor}`);
+    // Mostrar apenas o clicado
+    const infoDiv = document.getElementById(`info-${id}`);
     if (infoDiv) {
-      infoDiv.textContent = info[flor];
+      infoDiv.textContent = textos[id];
     }
   };
 
