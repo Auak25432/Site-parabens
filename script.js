@@ -1,19 +1,28 @@
-document.getElementById("iniciarBtn").addEventListener("click", function () {
-  // Mostrar seções
-  document.getElementById("titulo-flores").classList.remove("hidden");
-  document.getElementById("cards").classList.remove("hidden");
-  document.getElementById("titulo-hobbies").classList.remove("hidden");
-  document.getElementById("hobbies").classList.remove("hidden");
-  document.getElementById("titulo-generos").classList.remove("hidden");
-  document.getElementById("generos").classList.remove("hidden");
-  document.getElementById("titulo-caracteristicas").classList.remove("hidden");
-  document.getElementById("caracteristicas").classList.remove("hidden");
-  document.getElementById("parabens").classList.remove("hidden");
+document.addEventListener("DOMContentLoaded", function () {
+  const emojiContainer = document.getElementById("emojiContainer");
+  const emojis = ['🎉', '🎊', '🎂', '🎈', '💖'];
 
-  // Desabilitar botão
-  this.disabled = true;
-  this.style.cursor = "default";
-});
+  function createFloatingEmoji() {
+    const span = document.createElement("span");
+    span.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    span.style.left = Math.random() * 100 + "vw";
+    span.style.animationDuration = 5 + Math.random() * 5 + "s";
+    emojiContainer.appendChild(span);
+    setTimeout(() => span.remove(), 10000);
+  }
+
+  setInterval(createFloatingEmoji, 600);
+
+  document.getElementById("iniciarBtn").addEventListener("click", function () {
+    const elementos = [
+      "titulo-flores", "cards",
+      "titulo-hobbies", "hobbies",
+      "titulo-generos", "generos",
+      "titulo-caracteristicas", "caracteristicas",
+      "parabens"
+    ];
+    elementos.forEach(id => document.getElementById(id).classList.remove("hidden"));
+  });
 
   window.mostrarInfo = function (item) {
     const info = {
@@ -33,26 +42,4 @@ document.getElementById("iniciarBtn").addEventListener("click", function () {
     const infoDiv = document.getElementById(`info-${item}`);
     if (infoDiv) infoDiv.textContent = info[item];
   };
-
-  const emojiContainer = document.getElementById("emojiContainer");
-  const emojis = ['🎉', '🎊', '🎂', '🎈', '💖'];
-
-  function createFloatingEmoji() {
-  const span = document.createElement("span");
-  span.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-  span.style.left = Math.random() * 100 + "vw";
-  span.style.animationDuration = 5 + Math.random() * 5 + "s";
-  emojiContainer.appendChild(span);
-
-  setTimeout(() => {
-    span.remove();
-  }, 10000);
-
-  // Limitar a quantidade máxima de emojis para evitar lentidão
-  if (emojiContainer.children.length > 50) {
-    emojiContainer.removeChild(emojiContainer.firstChild);
-  }
-  }
-
-  setInterval(createFloatingEmoji, 600);
 });
