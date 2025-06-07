@@ -1,14 +1,17 @@
-/* Reset e estrutura */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 html, body {
   height: 100%;
+  min-height: 100%;
+  margin: 0;
   font-family: 'Arial', sans-serif;
   overflow-x: hidden;
 }
+
 body {
   background: linear-gradient(to bottom, #ffe6f0, #fff0f5, #ffffff);
   background-repeat: no-repeat;
@@ -24,8 +27,7 @@ body {
   z-index: 2;
 }
 
-/* Botão */
-#iniciarBtn {
+button#iniciarBtn {
   padding: 12px 24px;
   font-size: 1.1rem;
   background-color: #ff69b4;
@@ -36,24 +38,26 @@ body {
   margin-bottom: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-#iniciarBtn:hover {
+button#iniciarBtn:hover {
   background-color: #ff1493;
 }
 
-/* Títulos */
-#titulo-flores, #titulo-hobbies {
+#titulo-flores,
+#titulo-hobbies {
   color: #d63384;
-  font-size: 1.6rem;
-  margin: 30px 0 20px;
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-/* Cards gerais */
-.cards-container {
+#cards,
+#hobbies {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
 }
+
 .card {
   width: 90%;
   max-width: 320px;
@@ -80,9 +84,8 @@ body {
   margin-top: 6px;
 }
 
-/* Parabéns */
 #parabens {
-  margin-top: 40px;
+  margin-top: 30px;
   padding: 20px;
   background-color: #fff8e1;
   border-radius: 16px;
@@ -97,7 +100,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Emojis flutuantes */
 .floating-emojis {
   position: fixed;
   width: 100%;
@@ -113,26 +115,28 @@ body {
   font-size: 24px;
   animation: float 8s linear infinite;
 }
+
 @keyframes float {
   0% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(100vh); opacity: 0; }
 }
 
-/* Utilitárias */
 .hidden {
   display: none !important;
 }
+
 .fade-in {
   animation: fadeIn 1s ease-in-out forwards;
 }
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* Responsivo */
 @media (min-width: 600px) {
-  .cards-container {
+  #cards,
+  #hobbies {
     flex-direction: row;
     justify-content: center;
   }
