@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
   engraçada: "😂 Capaz de fazer sorrir até nos dias mais difíceis.",
   sorridente: "😊 Seu sorriso ilumina o ambiente e transmite alegria.",
   madura: "🧘‍♀️ Alguém que sabe lidar com a vida com equilíbrio e responsabilidade.",
+  elegante: "🧘‍♀️ Alguém que sabe lidar com a vida com equilíbrio e responsabilidade.",
   corajosa: "🦁 Enfrenta desafios com determinação e não foge dos seus sonhos.",
   especial: "🌷 Única, incomparável e insubstituível. Uma verdadeira bênção na vida de quem a conhece."
 };
