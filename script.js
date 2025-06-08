@@ -52,39 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
   corajosa: "🦁 Enfrenta desafios com determinação e não foge dos seus sonhos.",
   especial: "🌷 Única, incomparável e insubstituível. Uma verdadeira bênção na vida de quem a conhece."
 };
-
-    function mostrarInfo(id) {
-  let mensagem = "";
-
-  switch(id) {
-    // Individualidades únicas
-    case 'ind1':
-      mensagem = "Esquecimento prolongado (vulgo alzheimerkkk): Quando você esquece até o que ia falar!";
-      break;
-    case 'ind2':
-      mensagem = "Portadora do intruso (o ser mais forte da ficção): Um poder que ninguém entende!";
-      break;
-    case 'ind3':
-      mensagem = "Excelente jogadora de sinuca: Todos tremem diante das suas jogadas incríveis! 😱";
-      break;
-    case 'ind4':
-      mensagem = "Visão de águia: Enxerga até os átomos, nada escapa do seu olhar.";
-      break;
-    case 'ind5':
-      mensagem = "A maior jogadora de futebol de todos os tempos: Marta ou Ingryd? 🧐";
-      break;
-
-    // Defeitos
-    case 'def1':
-      mensagem = "Torcer para o Palmeiras: Esse é o maior defeito, segundo muitos!";
-      break;
-
-    default:
-      mensagem = "Informação não disponível.";
-  }
-
-  alert(mensagem);
-    }
     document.querySelectorAll(".info").forEach(div => div.innerHTML = "");
     const infoDiv = document.getElementById(`info-${item}`);
     if (infoDiv) infoDiv.textContent = info[item];
