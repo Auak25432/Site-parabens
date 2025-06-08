@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
   acao: "🔥 Adrenalina, luta e superação!",
   
   // Características
-  meninaDeDeus: "🙏 Uma jovem guiada pela fé, com um coração voltado a Deus e aos bons valores.",
+  menina: "🙏 Uma jovem guiada pela fé, com um coração voltado a Deus e aos bons valores.",
   gentil: "💖 Uma pessoa que trata os outros com carinho, atenção e respeito.",
   inteligente: "🧠 Raciocínio rápido, sabedoria e uma mente curiosa e brilhante.",
   linda: "🌟 Beleza por fora e ainda mais por dentro, com um brilho único.",
