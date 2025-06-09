@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "titulo-hobbies", "hobbies",
       "titulo-generos", "generos",
       "titulo-caracteristicas", "caracteristicas",
-      "parabens"
+      "parabens", "individualidades", "defeitos"
     ];
     elementos.forEach(id => document.getElementById(id).classList.remove("hidden"));
   });
