@@ -50,8 +50,20 @@ document.addEventListener("DOMContentLoaded", function () {
   madura: "🧘‍♀️ Alguém que sabe lidar com a vida com equilíbrio e responsabilidade.",
   elegante: "🧘‍♀️ Alguém que sabe lidar com a vida com equilíbrio e responsabilidade.",
   corajosa: "🦁 Enfrenta desafios com determinação e não foge dos seus sonhos.",
-  especial: "🌷 Única, incomparável e insubstituível. Uma verdadeira bênção na vida de quem a conhece."
+  especial: "🌷 Única, incomparável e insubstituível. Uma verdadeira bênção na vida de quem a conhece.",
+
+  // Individualidades únicas
+  esquecimento: "Tem uma memória tão boa que esquece o que ia dizer enquanto ainda tá falando. (amnésia kkk)",
+  intruso: "Ela é a portadora do intruso — o ser mais forte da ficção. Nem Goku compete.",
+  sinuca: "Campeã mundial de sinuca! Todos tremem diante de suas jogadas lendárias. 😱",
+  visaoAguia: "Visão de águia: enxerga até os átomos. Superman chora de inveja.",
+  futebol: "A maior jogadora de futebol de todos os tempos! Marta ou Ingryd? Eis a questão. 🧐",
+
+  // Defeitos
+  palmeiras: "Torcer para o Palmeiras... esse é o defeito mais difícil de perdoar. 😅",  
 };
+
+    
     document.querySelectorAll(".info").forEach(div => div.innerHTML = "");
     const infoDiv = document.getElementById(`info-${item}`);
     if (infoDiv) infoDiv.textContent = info[item];
