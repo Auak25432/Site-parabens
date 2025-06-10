@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
   series_filmes: "Assistir séries, um ótimo hobbie também, sempre foi muito bom puxar assunto sobre isso com você",
   romance: "eca... romance kkkk",
   dorama: "Preciso falar alguma coisa sobre isso? kkkkkk ",
-  fantasia: "",
-  acao: "",
+  fantasia: "Terror, um gênero que você era muito familiarizada, nunva vi uma pessoa assistir tanto filme de terror",
+  acao: "Comédia mais que a metade da população brasileira gosta, mas eu acho impossível alguém como você nunca ter assistido farofeiros",
   
   // Características
   menina: "Sempre foi uma menina que sempre coloca Deus em tudo que faz, aprendi muito com você, apesar de ser mais velho, posso falar que você sempre foi meu exemplo como cristão, você sempre acorda cedo para ler e meditar na palavra, uma jovem centrada na obra, sempre me encorajou em várias coisas relacionadas a igreja, então eu digo obrigado",
