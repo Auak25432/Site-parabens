@@ -51,13 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
   madura: "Tem uma maturidade invejável (inveja santakkkk), se você aceitasse todos os pedidos que já te fiz, com toda certeza tudo teria dado errado, mas você sempre teve a maturidade de olhar por trás de tudo, realmente eu te agradeço por isso",
   elegante: "Realmente é uma mulher muito elegante, sempre está vestindo roupas que combinam e que são muito elegantes e lindas",
   corajosa: "Uma mulher muito paciente, teve situações que você poderia simplesmente mandar eu ir catar coquinhokkkk, mas sempre foi muito paciente comigo, não importa o tão insistente e chato for, obrigado",
-  especial: "Você é uma pessoa muito especial para mim, não posso ser mesmo pra vocêkkkkk, mas para mim é, daria minha vida se fosse preciso",
+  especial: "Você é uma pessoa muito especial para mim, posso não ser o mesmo pra vocêkkkkk, mas para mim é, daria minha vida por você se fosse preciso",
 
   // Individualidades únicas (ironia)
     esquecimento: "Memória excelentekkkkkkk, invejável a capacidade de lembrar as coisas",
     intruso: "Portadora do Intruso, O ser mais fofo e o mais forte da ficção.",
     sinuca: "Baianinha de Mauá, só pela presença dela na mesa todas as bolas vão para caçapa",
-    visao: "Visão de águia, eu não posso te zuar mais sobre isso, estou indo pelo mesmo caminho kkkkkk",
+    visao: "Eu não posso te zuar mais sobre isso, estou indo pelo mesmo caminho kkkkkk",
     futebol: "A maior de todos os tempos, números que superam de Pelé, Messi e Cristiano Ronaldo juntos, (não sabia oq era um gol de bicicleta kkkkk, brincadeira desculpa)",
 
     // Defeitos
