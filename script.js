@@ -42,16 +42,16 @@ document.addEventListener("DOMContentLoaded", function () {
   
   // Características
   menina: "Sempre foi uma menina que sempre coloca Deus em tudo que faz, aprendi muito com você, apesar de ser mais velho, sempre acorda cedo para ler e meditar na palavra, uma jovem centrada na obra, sempre me encorajou em várias coisas relacionadas a igreja, então obrigado",
-  gentil: "Sempre foi gentil comigo, não importa o quanto eu te irritasse, quando prometia coisas que eu não cumpria, mas sempre me tratou e trata as pessoas quão tamanha gentileza",
+  gentil: "Sempre foi gentil comigo, não importa o quanto eu te irritasse e fosse insistente, mas sempre me tratou e trata as pessoas quão tamanha gentileza",
   inteligente: "Uma menina muito inteligente, apesar da memória....kkkk brincadeira, sempre observei, uma menina que é inteligente tanto para as coisas da igreja, como nos estudos, muito esforçada",
   linda: "Tem uma grande beleza tanto exterior como interior, nunca reage bem com elogios.... kkkk",
   humilde: "Sempre foi muito humilde, nunca quis se aparecer, sempre foi muito modesta, eu admiro isso",
   engraçada: "Sempre me fez rir, quando eu conversava com você meu dia melhorava 100%",
-  sorridente: "Tem um sorriso contagiante, eu nunca fui engraçado suficiente pra te fazer dar risadas, mas sempre observo quando alguém te fazia sorrir, é um sorriso que contagiante e muito lindo também",
+  sorridente: "Tem um sorriso contagiante, eu nunca fui engraçado suficiente pra te fazer rir, mas sempre observo quando alguém te fazia sorrir, é um sorriso que contagiante e muito lindo também",
   madura: "Tem uma maturidade invejável (inveja santakkkk), se você aceitasse todos os pedidos que já te fiz, com toda certeza tudo teria dado errado, mas você sempre teve a maturidade de olhar por trás de tudo, realmente eu te agradeço por isso",
   elegante: "Realmente é uma mulher muito elegante, sempre está vestindo roupas que combinam e que são muito elegantes e lindas",
   corajosa: "Uma mulher muito paciente, teve situações que você poderia simplesmente mandar eu ir catar coquinhokkkk, mas sempre foi muito paciente comigo, não importa o tão insistente e chato for, obrigado",
-  especial: "Você é uma pessoa muito especial para mim, posso não ser o mesmo pra vocêkkkkk, mas para mim é, daria minha vida por você se fosse preciso",
+  especial: "Você é uma pessoa muito especial, uma menina única e diferente, na minha vida você é especial, posso não ser o mesmo para você kkkk, mas para mim é",
 
   // Individualidades únicas (ironia)
     esquecimento: "Memória excelentekkkkkkk, invejável a capacidade de lembrar as coisas",
