@@ -109,13 +109,16 @@ h2 {
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
-#parabens h2 {
+.mensagem-final h2 {
   color: #ff69b4;
   font-size: 1.8rem;
 }
-#parabens p {
-  color: #333;
-  font-size: 1.1rem;
+.mensagem-final p {
+  margin-bottom: 20px;    /* espaço entre os parágrafos */
+  line-height: 1.6;       /* espaço entre as linhas do texto */
+  text-align: center;     /* texto centralizado */
+  font-size: 18px;        /* tamanho da fonte maior e confortável */
+  letter-spacing: 0.05em; /* um espaçamento leve entre letras */
 }
 
 .floating-emojis {
