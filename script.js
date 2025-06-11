@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   acao: "Comédia mais que a metade da população brasileira gosta, mas eu acho impossível alguém como você nunca ter assistido farofeiros",
   
   // Características
-  menina: "Sempre foi uma menina que sempre coloca Deus em tudo que faz, aprendi muito com você, apesar de ser mais velho kkkk, sempre acorda cedo para ler e meditar na palavra, uma jovem centrada na obra, sempre me encorajou em várias coisas relacionadas a igreja, então obrigado",
+  menina: "Sempre foi uma menina que sempre coloca Deus em tudo que faz, aprendi muito com você, apesar de ser mais velho, sempre acorda cedo para ler e meditar na palavra, uma jovem centrada na obra, sempre me encorajou em várias coisas relacionadas a igreja, então obrigado",
   gentil: "Sempre foi gentil comigo, não importa o quanto eu te irritasse, quando prometia coisas que eu não cumpria, mas sempre me tratou e trata as pessoas quão tamanha gentileza",
   inteligente: "Uma menina muito inteligente, apesar da memória....kkkk brincadeira, sempre observei, uma menina que é inteligente tanto para as coisas da igreja, como nos estudos, muito esforçada",
   linda: "Tem uma grande beleza tanto exterior como interior, nunca reage bem com elogios.... kkkk",
